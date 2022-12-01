@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+        <div class="weather-form">
+            <div class="weather-form-container">
+                <div class="weather-form-header">
+                    <h1>Weather Api</h1>
+                </div>
+                <div class="weather-form-input">
+                    <input id="location" type="locatin" placeholder="Location" autocomplete="location">
+                    <div class="input-warning" id="input-location-warning"></div>
+
+                </div>
+                <div class="weather-form-input">
+                    <input id="accesskey" type="token" placeholder="Access Token">
+                    <div class="input-warning" id="input-token-warning"></div>
+                </div>
+                <div class="weather-form-btn">
+                    <button onclick="submit()">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="header">
+            <h1>Weather Data</h1>
+        </div>
+        <div class="table_body">
+            <div class="innerborder">
+                <p class="text1 txt" id="location">Location:</p>
+                <p class="text2 txt">Lat:<span class="long">Long:</span></p>
+                <p class="text3 txt">TimeZone:</p>
+                <p class="text4 txt">Wind Speed:</p>
+                <p class="text5 txt">Pressure:</p>
+                <p class="text6 txt">Humidity:</p>
+                <p class="text7 txt">Wind Direction:</p>
+                <p class="text8 txt">UV Index:</p>
+                <p class="text9 txt">Feels Like:</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
